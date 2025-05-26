@@ -1,39 +1,40 @@
-Hesap makinesi uygulaması kullanıcıdan 2 sayı ve bir işlem türü aldıktan sonra sonucu ekrana yazdıran bir koddur.
+# 🧮 Basit Hesap Makinesi - C# Konsol Uygulaması
 
-Çalışma prensibi:
+Bu C# uygulaması, iki sayı üzerinde temel matematiksel işlemleri gerçekleştiren basit bir **konsol tabanlı hesap makinesi**dir. Kullanıcıdan iki sayı alınır ve ardından istenen işlem seçilerek sonuç ekrana yazdırılır.
 
-Kullanıcıdan 2 tane sayı istenir.
-Console.ReadLine() ile girilen değerler alınır.
-Convert.ToInt32() ile string olan girişler sayılara çevrilir.
+---
 
-İşlem türleri:
+## 🚀 Başlangıç
 
-Kullanıcıdan hangi işlemi yapmak istediği sorulur.
-Harflerle işlem seçimi yapılır:
+### Gereksinimler
 
-t: Toplama
+- .NET SDK yüklü olmalıdır ([.NET İndir](https://dotnet.microsoft.com/download))
+- C# destekli bir IDE (Visual Studio, Visual Studio Code, vs.) önerilir.
 
-ç: Çıkarma
+---
 
-x: Çarpma
+## ⚙️ Uygulama Nasıl Çalışır?
 
-b: Bölme
+1. Uygulama başlatıldığında kullanıcıdan iki tam sayı alınır.
+2. Kullanıcıdan hangi işlemi yapmak istediği sorulur:
+   - **Toplama** için: `t`
+   - **Çıkarma** için: `ç`
+   - **Çarpma** için: `x`
+   - **Bölme** için: `b`
+3. Seçilen işleme göre sonuç hesaplanır ve ekrana yazdırılır.
+4. Eğer bölme işleminde ikinci sayı sıfır ise, **sıfıra bölme hatası** gösterilir.
+5. Geçersiz bir işlem girilirse kullanıcı bilgilendirilir.
 
-İşlem ve Sonucu:
+---
 
-Seçilen işlem kontrol edilir.
-Eğer geçerli bir işlem seçilmişse, sonuç hesaplanır.
-Bölme işleminde ikinci sayı sıfırsa, kullanıcı uyarılır ve program durur.
-Geçersiz bir harf girilirse yine kullanıcı uyarılır ve program sonlanır.
+## 🧠 Kodun Çalışma Prensibi
 
-Sonuç ekrana yazdırılır.
-Console.ReadKey() ile kullanıcı bir tuşa basana kadar ekran açık kalır.
+- `Console.ReadLine()` ile kullanıcıdan giriş alınır.
+- `Convert.ToInt32()` ile alınan girişler sayıya çevrilir.
+- `if/else` blokları ile hangi işlemin seçildiği kontrol edilir.
+- `Console.WriteLine()` ile sonuç yazdırılır.
 
+---
 
-
-
-
-
-
-
+## 💡 Örnek Kullanım
 
